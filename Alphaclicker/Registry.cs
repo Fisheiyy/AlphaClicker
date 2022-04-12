@@ -36,10 +36,7 @@ namespace AlphaClicker
                 Keybinds.keyBinding = GetRegistryKey("Software\\AlphaClicker")
                     .GetValue("keybinding").ToString();
             }
-            catch
-            {
-                // Ignore this exception
-            }
+            catch { }
         }
 
         public static void SetWindowSettings(bool topmostValue)
@@ -57,8 +54,7 @@ namespace AlphaClicker
             {
                 return regKey.GetValue("theme").ToString();
             }
-            catch
-            { }
+            catch { }
 
             return "";
         }
@@ -75,8 +71,7 @@ namespace AlphaClicker
                     return false;
                 
             }
-            catch
-            { }
+            catch { }
 
             return true;
         }

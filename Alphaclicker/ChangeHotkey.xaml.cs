@@ -125,7 +125,7 @@ namespace AlphaClicker
                             okBtn.IsEnabled = true;
                             break;
                         }
-                        /* If function key, Numpad 0-9 or Add/Subtract around numpad */
+                        /* If Function key, Numpad 0-9 or Add/Subtract around numpad */
                         else if (i >= 96 && i <= 123)
                         {
                             keyBox.AppendText(CodeToSpecialKey(i));
@@ -135,8 +135,6 @@ namespace AlphaClicker
                             break;
                         }
                     }
-
-
                 }
             }
         }
@@ -173,11 +171,6 @@ namespace AlphaClicker
         private void hotkeyWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             ((MainWindow)this.Owner).keyEnabled = true;
-        }
-
-        private void keyBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
-        {
-
         }
     }
 
